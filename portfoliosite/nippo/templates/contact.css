@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+
+.home-content {
+    margin: 0 auto;
+    padding: 0 4%;
+    color: white;
+}
+
+.app-contents {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Zen Old Mincho', sans-serif;
+}
+
+body {
+    background: url(pages/StockSnap_TWNP864IW9.jpg) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.form-container {
+    margin-bottom: 0 20px 40px 20px;
+    position: relative;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width:550px;
+    background: rgba(0,0,0,0.8);
+    padding:30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   
+}
+
+.form-container .title h1{
+    color: #FFF9EC;
+    text-align:center;
+    margin-bottom: 25px;
+}
+
+.contact-form{
+    display:flex;
+}
+
+.input-fields{
+    display:flex;
+    flex-direction:column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+    width:48%;
+}
+
+.input-fields .input, 
+.msg textarea{
+    margin:10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #FFF9EC;
+    padding: 10px;
+    color: #FFF9EC;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 178px;
+}
+
+::-webkit-input-placeholder {
+    color: #FFF9EC;
+}
+
+::-moz-input-placeholder {
+    color: #FFF9EC;
+}
+
+::-ms-input-placeholder {
+    color: #FFF9EC;
+}
+
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    width:100%;
+}
+
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+}
+
+footer {
+    background: #000000;
+    text-align: center;
+    padding: 26px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.my-div-style {
+    margin-top: 6rem;
+}
+.nav-link {
+    font-size: 2rem;
+}

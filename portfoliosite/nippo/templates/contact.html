@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'contact.css' %}"/>
+    <title>ヒロのサイト</title>
+</head>
+<body>
+    <div class="home-content wrapper">
+        <h2 class="page-title">
+            <p>web ios App Creator</p>
+            <p>Hiro</p>
+        </h2>
+        <h3>
+            <p>I am a Japanese web and ios App Creator
+            if your have any comments, please feel free to contact me!</p>
+            <p>お気軽にお問い合わせください</p>
+        </h3>
+    </div>
+        <div class="app-contents wrapper">
+            <article>
+                <a style="width: 170px; height: 170px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/b9/8f/5c/b98f5c06-1eb1-8d51-c51f-23f3dbd7c1e1/AppIcon_4-1x_U007emarketing-0-6-0-85-220.png/540x540bb.jpg" alt="DAYCE" style="width: 170px; height: 170px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;"></a>
+
+                <a href="https://apps.apple.com/jp/app/dayce/id6444592652?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1669075200" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+            </article>
+            <a class="nav-link {% block active_inquiry %}{% endblock %}" href="{% url 'nippo:inquiry' %}">お問い合わせ</a>
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <p><small>&copy; 2023 Hiro</small></p>
+            </div>
+        </footer>
+</body>
+</html>
