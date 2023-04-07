@@ -14,9 +14,9 @@ from pathlib import Path
 import os
 from django.contrib.messages import constants as messages
 import environ 
-from django.core.management.utils import get_random_secret_key
+# from django.core.management.utils import get_random_secret_key
 
-SECRET_KEY = get_random_secret_key()
+# SECRET_KEY = get_random_secret_key()
 
 env = environ.Env()
 env.read_env('.env')
@@ -36,7 +36,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -139,6 +139,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'nippo/templates/', os.path.join(BASE_DIR, 'static'),
 ]
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
