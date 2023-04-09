@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'contact.css' %}"/>
+    <link rel="stylesheet" href="{% static 'gpt.css' %}"/>
     <title>Developer HIRO</title>
 </head>
 <body>
@@ -27,9 +27,13 @@
 
                 <a href="https://apps.apple.com/jp/app/dayce/id6444592652?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1669075200" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
             </article>
-            <a class="nav-link {% block active_inquiry %}{% endblock %}" href="{% url 'nippo:inquiry' %}">お問い合わせ</a>
+            <!-- <a class="nav-link {% block active_inquiry %}{% endblock %}" href="{% url 'nippo:inquiry' %}">お問い合わせ</a> -->
         </div>
-
+        <div class="page-header">
+            <ul class="main-nav">
+                <li class="inquiry-btn"><a href="{% url 'nippo:inquiry' %}">お問い合わせ</a></li>
+            </ul>
+        </div>
         <footer>
             <div class="wrapper">
                 <p><small>&copy; 2023 Hiro</small></p>

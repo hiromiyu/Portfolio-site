@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+
+/* ページ全体に適用されるスタイル */
+body {
+    background: url(pages/StockSnap_TWNP864IW9.jpg) no-repeat top center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  *{
+    margin: 10;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: serif;
+    /* font-family: 'Zen Old Mincho', sans-serif; */
+}
+  /* ヘッダーのスタイル */
+  .home-content {
+    /* background-color: #f9f9f9; */
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* タイトルのスタイル */
+  .page-title {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  
+  画像のスタイル
+  .app-contents img {
+    margin-right: 20px;
+  }
+  
+  /* ボタンのスタイル */
+  .app-contents a {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  /* フッターのスタイル */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    height: 100px;
+  }
+  
+  /* ラッパーのスタイル */
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  /* .home-content { */
+    /* margin: 0 auto; */
+    /* padding: 0 4%; */
+    /* color: white; */
+/* } */
+
+.app-contents {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.inquiry-btn {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: greenyellow;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.inquiry-btn:hover {
+  background-color: olivedrab;
+  color: #fff;
+}
