@@ -94,4 +94,5 @@ body {
 .inquiry-btn:hover {
   background-color: olivedrab;
   color: #fff;
+  border-radius: 10px;
 }
